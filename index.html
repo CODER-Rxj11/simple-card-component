@@ -45,15 +45,17 @@
     }
 
     .card {
-      width: 300px;
-      max-width: 450px;
+      width: 250px;
       margin: 0 auto;
       box-shadow: 0 0 10px rgba(0, 0, 0.5, 0.3);
       background-color: #fff;
       border-radius: 25px;
-      padding: 2em 3em;
+      padding: 1em 0em;
       transition: all 0.5s ease-in-out;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .card:hover {
@@ -62,19 +64,22 @@
     }
 
     .card img {
-      width: 100%;
-      height: 200px;
+      width: 90%;
       object-fit: cover;
+      border-radius: 15px;
     }
 
     .card h3 {
       font-size: 20px;
       margin: 10px 0;
       text-align: center;
+      font-weight: 900;
     }
 
     .card p {
-      font-size: 14px;
+      padding: 1em;
+      font-size: 12px;
+      line-height: 1;
       margin: 0;
       text-align: center;
       /* color: #dadada; */
@@ -83,9 +88,9 @@
 
     /* Responsive CSS */
 
-    @media (max-width: 576px) {
+   @media (max-width: 450px) {
       .card {
-        width: 100%;
+        width: 90%;
       }
     }
   </style>
